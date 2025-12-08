@@ -17,10 +17,11 @@ library(lme4)
 
 
 #Set Working Directory to allow for better importation of RData file.
-setwd("~/Documents/School/Herbivory Research/R Analysis")
+#No longer necessary b/c data is in project
+#setwd("~/Documents/School/Herbivory Research/R Analysis")
 
 #Import Data file "Herbivory_data.RData"
-load("~/Documents/School/Herbivory Research/R Analysis/Herbivory_Data.RData")
+load("Herbivory_Data.RData")
 
 #1 -----Begin with the Host Variation Experiment analysis-----
 #A Plot interacting effects of species variation and movement on the relative growth rate of the Spodoptera
@@ -363,6 +364,8 @@ m2d_Fert_MPLD
 #b Transform the data using log
 Excl_Fert_RGR_Cond$LogRGR <- log(as.numeric(Excl_Fert_RGR_Cond$RGR))
 Excl2_Fert_LOGRGR <- subset(Excl_Fert_RGR_Cond, Excl_Fert_RGR_Cond$LogRGR != "NA")
+# error message: In log(as.numeric(Excl_Fert_RGR_Cond$RGR)) : NaNs produced
+# can't do ca code below
 
 #c Levene test to see if variances are homogeneous among 4 treatment combinations
 m3_Fert_RGR <- leveneTest(as.numeric(Excl_Fert_RGR_Cond$RGR) ~ Excl_Fert_RGR_Cond$Fertilization:Excl_Fert_RGR_Cond$Movement)
