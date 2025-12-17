@@ -1,0 +1,17 @@
+Column Name,Description,Units
+Exclude,"States what plant will be excluded from the statistical analysis
+Y = Will exclude
+N = Will not exclude",NA
+Plant_ID,"First initial of experimentor and plant number (e.g., A1)",NA
+NoS,Number of spods placed on the plant,NA
+ILN,"Initial Leaf Number
+Number of Ieaves on the plant before the experiment",count
+LLL,"Longest Leaf Length
+Length of the longest leaf on the plant before the experiment",cm
+FPLD_#,"Final Percent Leaf Damage Leaf Number
+Percent damage on each leaf on the plant after the experiment",cm2
+Total_FPLD,"Total Final Percent Leaf Damage
+Sum of Final Percent Leaf Damages of all leaves on the plant after the experiment",cm2
+Mean_PLD,"Mean Percent Leaf Damage
+The average percent damage per leaf on the plant after the experiment
+Calculated using Total Final Percent Leaf Damage / Initial Leaf Number",cm2

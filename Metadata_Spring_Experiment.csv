@@ -1,0 +1,59 @@
+Column Name,Description,Units
+Temporal_Rep,"Round of data collection (1, 2, 3, etc.)",NA
+State,The state inwhich the data was collected (OR = Oregon or FL = FLorida),NA
+Plant_ID,"First initial of experimentor and plant number (e.g., A1)",NA
+Cluster_ID,"Range of Plant ID's in the cluster (e.g., A1_A6; NA if not in a cluster)",NA
+Treatment,"MY = movement
+MN = movement
+FY = fertilization
+FN = no fertilization
+HY = host variation
+HN = no host variation
+(e.g., MY_FY_HY)",NA
+Movement,"Y = yes; cluster of 6 plants with tape around the outer edge of the cluster of pots, so spods can move among plants
+N = no; individual plants with tape around the pot, so spods cannot move among plants",NA
+Fertilization,"Y = yes; with Osmocote fertilizer
+N = no; without Osmocote fertilizer",NA
+Host_Variation,"Y = yes; 27 kale and 27 mustard in clusters of 6, 27 individual kale and 27 individual mustard
+N = no; 54 kale in clusters of 6, 54 individual kale",NA
+Host_Species,"K = kale
+M = mustard",NA
+ILN,"Initial Leaf Number
+Number of Ieaves on the plant before the experiment",count
+LLL,"Longest Leaf Length
+Length of the longest leaf on the plant before the experiment",cm
+FPLD_#,"Final Percent Leaf Damage Leaf Number
+Percent damage on each leaf on the plant after the experiment",cm2
+Total_FPLD,"Total Final Percent Leaf Damage
+Sum of Final Percent Leaf Damages of all leaves on the plant after the experiment",cm2
+Mean_PLD,"Mean Percent Leaf Damage
+The average percent damage per leaf on the plant after the experiment
+Calculated using Total Final Percent Leaf Damage / Initial Leaf Number",cm2
+FSN,"Final Spod Number
+Number of spods on the plant after the experiment",count
+FSL,"Final Spod Location
+Location where the spod was found after the experiment
+T = on the tape
+S = on top of the soil
+B = buried in the soil
+P = on the plant
+C = on the bag
+E = escaped bag",NA
+ISMM,"Initial Spod Mass Movement
+If in a cluster, the total mass of the spods on the 6 plants before the experiment
+If not in a cluster, ""NA""",g
+ISM,"Initial Spod Mass
+If not in a cluster, the mass of the spod on the plant before the experiment
+If in a cluster, the average mass of the spods on the 6 plants before the experiment",g
+FSMM,"Final Spod Mass Movement
+If in a cluster, the total mass of the spods on the 6 plants after the experiment
+If not in a cluster, ""NA""",g
+FSM,"Final Spod Mass
+If not in a cluster, the mass of the spod on the plant after the experiment
+If in a cluster, the average mass of the spods on the 6 plants after the experiment",g
+RGR,"Relative Growth Rate
+Calculated using ln(Final Spod Mass) – ln(Initial Spod Mass) / (1 day for rounds 1 and 2, 2 days for rounds 3 and 4)
+Based on the equation: (lnW2 – lnW1) / (T2–T1), where W2 is final per capita mass, W1 is initial per capita mass, T2 is final time of herbivory in days, T1 is initial time of herbivory in days",g/g/day
+FLA_#,Final leaf area collected from LeafByte,cm2
+Total_FLA,Total Final Leaf Area The sum of the final leaf areas for the plant,cm2
+Mean_FLA,Mean Final Leaf Area The average leaf area of the plant Calculated using Total Final Leaf Area / Initial leaf Number,cm2
